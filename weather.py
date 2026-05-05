@@ -26,6 +26,13 @@ def get_weather(city):
 def run_app():
     searched_cities = []
     print("=== Weather App ===")
+
+    favorite = input("\nDo you have a favorite city? (yes/no): ")
+    if favorite.lower() == "yes":
+        fav_city = input("What is your favorite city? ")
+        get_weather(fav_city)
+        searched_cities.append(fav_city)
+            
     while True:
         city = input("\nEnter a city (or 'quit' to exit): ")
         if city.lower() == "quit":
@@ -44,6 +51,7 @@ def run_app():
                 print(f" - {c}")
             print("Goodbye!")
             break
+            
 
 
 
