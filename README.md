@@ -8,6 +8,7 @@ real-time weather data from the wttr.in API.
 - Shows temperature, feels like, condition, humidity and wind speed
 - Handles invalid cities gracefully
 - Runs continuously until user quits
+- Favrotie City feature
 
 ## How to Run
 
